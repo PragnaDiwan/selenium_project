@@ -3,28 +3,28 @@ I have added all selenium script written by me list is as per below:
 
 Use of Action class with example
 
-how to find broken link in website 
+How to find broken link in website 
 
-how to search,book and payment for bus with flow and script
+How to search,book and payment for bus with flow and script
 
-how to open 130 website in diffrent tab open and one by one close and give report whether it is working or not.
+How to open 130 website in diffrent tab open and one by one close and give report whether it is working or not.
 
-how to use capturescreenshot in selenium with java
+How to use capturescreenshot in selenium with java
 
-database test demo in selenium
+Database test demo in selenium
 
-data diven testing in selenium
+Data diven testing in selenium
 
-extent report
+Extent report
 
-google search page script
+Google search page script
 
-gmail login and mail sent script
+Gmail login and mail sent script
 
-page object model demo
+Page object model demo
 
-read and write excel in selenium
+Read and write excel in selenium
 
-recharge module script
+Recharge module script
 
-flight module script.
+Flight module script.
