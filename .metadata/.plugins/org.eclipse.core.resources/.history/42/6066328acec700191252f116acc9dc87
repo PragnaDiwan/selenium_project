@@ -1,0 +1,28 @@
+
+public class FIRST {
+
+	public static void main(String[] args) {
+		system.setproperty("webdriver.chrome.driver","F:\\java\\chromedriver_win32");
+		
+		webdriver driver=new chromedriver();
+		
+		driver.navigate().to("http://www.google.com/");
+		
+		
+		 driver.findElement(By.id("lst-ib")).sendKeys("javatpoint tutorials"); 
+		 
+		 driver.findElement(By.name("btnK")).click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

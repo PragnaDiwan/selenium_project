@@ -1,0 +1,19 @@
+package secondtest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class readexcel {
+	
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.chrome.driver", "F:\\java\\chromedriver_win32\\chromedriver.exe");
+		
+		WebDriver Driver= new ChromeDriver();
+		
+		Driver.get("http://www.newtours.demoaut.com/");
+		
+		Driver.manage().window().maximize();
+	}
+
+}

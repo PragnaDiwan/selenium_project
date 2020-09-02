@@ -1,0 +1,59 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class pomglobal {
+	
+	WebDriver driver;
+	By img=By.xpath("//*[@id=\"root\"]/div/div[1]/nav/div/div/div[4]/div/ul/li[4]/span/span/a/img");
+    By loginbtn=By.xpath("/html/body/div[2]/div/div/div/div[2]/ul/li[1]/a/div");
+    By username = By.name("username");
+    By password = By.name("password");
+    By click = By.xpath("/html/body/div[3]/div/div[2]/div/div/div/form/div/div/div/div/div/div/div[3]/button");
+    
+    
+    
+   public pomglobal(WebDriver driver)
+    
+   {
+    	this.driver=driver;
+   }
+    
+    
+    public void typeimage(String uid,String pass)
+    {
+    	
+    	driver.findElement(img).click();
+    	driver.findElement(loginbtn).click();
+    	driver.findElement(username).sendKeys(uid);
+    	driver.findElement(password).sendKeys(pass);
+    	driver.findElement(click).click();
+    	
+    }
+    
+   /* public void typeloginbtn()
+    {
+    	
+    	
+    	
+    }
+    
+    public void typeusername(String uid)
+    {
+    	
+    }
+    
+   public void typepassword(String pass)
+   {
+	   
+   }
+   
+   public void typeclick()
+   {
+	   driver.findElement(click).click();
+   }*/
+    
+}
+
+

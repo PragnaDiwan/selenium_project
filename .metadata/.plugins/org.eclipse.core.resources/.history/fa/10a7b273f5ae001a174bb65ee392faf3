@@ -1,0 +1,50 @@
+package pages;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class recharge {
+	public recharge(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy(xpath="//*[@id=\"root\"]/div/div[2]/section[1]/div[1]/div/div[1]/a/p")
+	public WebElement billpay;
+
+	
+	@FindBy(xpath="//*[@id=\"root\"]/div/div[2]/div[3]/div[1]/div/form/div[2]/div/div/div/div[1]/div[1]")
+	public WebElement operator;
+	
+	@FindBy(xpath="//*[@id=\"root\"]/div/div[2]/div[3]/div[1]/div/form/div[3]/div/label")
+	public WebElement mobileno;
+	
+	@FindBy(xpath="//*[@id=\"root\"]/div/div[2]/div[3]/div[1]/div/form/div[4]/div/label")
+	public WebElement amount;
+	
+	public void recharge1() throws InterruptedException
+	{
+		
+		billpay.click();
+		operator.click();
+		Thread.sleep(5000);
+		operator.sendKeys("Vodafone");
+		Thread.sleep(5000);
+
+		mobileno.sendKeys("8141143966");
+		Thread.sleep(5000);
+
+		amount.sendKeys("10");
+		Thread.sleep(5000);
+
+	}
+
+	
+
+
+}

@@ -1,0 +1,62 @@
+package pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import pm1.pom2;
+
+public class verifylogin {
+	
+	WebDriver driver;
+	@BeforeTest
+	
+		public void loginglobal()
+		{
+		
+	ChromeOptions options =new ChromeOptions();
+	options.addArguments("disable-notifications");
+	System.setProperty("webdriver.chrome.driver", "F:\\java\\chromedriver_win32\\chromedriver.exe");
+     driver=new ChromeDriver(options);
+	
+	driver.get("https://www.globalgarner.com/");
+	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  driver.manage().window().maximize();  }
+	  
+       	  @Test(priority=0)
+       	  public void login1() {
+ pomglobal logina= new pomglobal(driver);
+	
+	  
+	  logina.typeimage("8141143966","global916");}
+       	  
+	/*  logina.typeloginbtn();
+	  logina.typeusername("8141143966");
+	  logina.typepassword("global916");
+	  logina.typeclick(); */
+       	  
+       	  @Test(priority=1)
+       	  public void bsw1() 
+       	  {
+	  
+	 pom2 bsw1 =new pom2(driver);
+	  
+	  bsw1.bswclick();
+	  
+       	  }
+       	  
+       	  @AfterTest
+       	  public void close()
+       	  {
+       		  driver.quit();
+       	  }
+       	  
+       	  
+       	  
+	}
+
